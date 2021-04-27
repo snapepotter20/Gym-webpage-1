@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khauf's Fittness JYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family:'Baloo Bhaina 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('https://is.gd/WCNHLR');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* text-align: center; */
+    }
+
+    .left div {
+        text-align: center;
+    }
+    .left div:hover{
+        cursor: alias;
+        color: rgb(212, 141, 141);
+    }
+
+    .left img {
+        width: 136px;
+        /* filter: invert(50%)-It changes color from black to white and vice versa */
+        filter: drop-shadow(8px 8px 10px rgb(88, 233, 209));
+    }
+
+    .mid {
+        display: block;
+        width: 52%;
+        margin: 20px auto;
+        /* border: 2px solid purple; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /* border: 2px solid greenyellow; */
+    }
+    #right-para1{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        /* display:inline-block; */
+        position: fixed;
+        right: 35px;
+        bottom:60px;
+    }
+    #right-para1:hover{
+      color: rgb(99, 197, 236);
+      cursor: pointer;
+    }
+    #right-para2{
+        /* border: 2px solid yellow; */
+        border-radius: 8px;
+        /* display:inline-block; */
+        position: fixed;
+        right: 34px;
+        bottom:21px;
+    }
+    #right-para2:hover{
+        color: rgb(99, 197, 236);
+      cursor: pointer;
+    }
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 24px 16px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(219, 48, 48);
+
+    }
+
+    .btn {
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family:'Baloo Bhaina 2', cursive;
+    }
+
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        border: 2px solid rgb(117, 231, 235);
+        margin: 52px 105px;
+        padding: 50px 46px;
+        width: 36%;
+        border-radius: 100px;
+    }
+
+    .container h1 {
+        text-align: center;
+        /* display: inline-block; */
+    }
+
+    .container h2 {
+        text-align: center;
+        line-height: 19px;
+    }
+
+    .form-group input {
+        font-family:'Baloo Bhaina 2', cursive;
+        text-align: center;
+        display: block;
+        width: 350px;
+        padding: 1px;
+        margin: 12px auto;
+        border: 2px solid black;
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    .container button {
+        display: block;
+        width: 64%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2016/05/17/21/56/weight-1399281_960_720.png" alt="">
+            <div>Khauf Fittness Club</div>
+        </div>
+        <!-- Mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Courses</a></li>
+            </ul>
+
+        </div>
+        <!-- Right fo buttons -->
+        <div class="right">
+            <p id="right-para1">
+              Call Us :- 0146-3186-19 ,
+                       0147-9720-47
+              
+            </p>
+            <p id="right-para2">
+              
+              Email Us :- khaufclub146@gmail.com
+            </p>
+            <button class="btn">Login</button>
+            <button class="btn">Sign UP</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best GYM</h1>
+        <h2>Fitness Freaks</h2>
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Phone No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
